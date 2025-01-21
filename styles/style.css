@@ -129,14 +129,104 @@
 .feachers{
     background-image: url('../assets/bg.png');
     max-width: 1440px;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
     
 }
 
+.feacher-title{
+    text-align: center;
+    font-size: 46px;
+    font-weight: bold;
+}
+
 .card{
+    max-width: 1160px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 28.29px;
 }
-.card-1{
-    background: radial-gradient(ellipse at top, #DEF5FF, #FFFFFF);
 
+.card-h{
+    font-size: 24.52px;
+    font-weight: bold;
+    color: #202020;
+
+}
+
+.card-d{
+    font-size: 15.09px;
+    font-weight: 600;
+
+}
+
+.card-img{
+    padding: 52px 115px;
+}
+
+.card-1{
+    background: radial-gradient(ellipse at top, #53eb85, #FFFFFF);
+    border: 1px solid orchid;
+    border-radius: 18.86px;
+    
+
+}
+
+.card-2{
+    background: radial-gradient(ellipse at top, #abe427, #FFFFFF);
+    border: 1px solid orange;
+    border-radius: 18.86px;
+
+}
+
+.card-3{
+    background: radial-gradient(ellipse at top, #0e82b4, #FFFFFF);
+    border: 1px solid orangered;
+    border-radius: 18.86px;
+}
+
+.card-sh-1{
+    color: #64C8FF;
+    font-size: 15.09px;
+    font-weight: bold;
+}
+
+.card-sh-2{
+    color: #F0AA00;
+    font-size: 15.09px;
+    font-weight: bold;
+}
+
+.card-sh-3{
+    color: #8700FF;
+    font-size: 15.09px;
+    font-weight: bold;
+}
+
+.circle-both{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+}
+.circle{
+    background-color: orange;
+    border-radius: 60px;
+    color: #FFFFFF;
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 30px 20px 10px 20px;
 }
