@@ -28,11 +28,13 @@
 }
 
 .nav-hading{
+    display: block;
     font-size: 32px;
     font-weight: bold;
     color: black;
 }
 .nav-links{
+    display: block;
     display: flex;
     list-style: none;
     gap: 32px;
@@ -67,6 +69,7 @@
 }
 
 .nav-btn{
+    display: block;
     background-color: orange;
     color: #FFFFFF;
     padding: 10px 60.5px;
@@ -76,7 +79,9 @@
     border: none;
 }
 
-
+.btn{
+    display: none;
+}
 /* Banner styles */
 .banner{
     display: flex;
@@ -128,7 +133,7 @@
 /* Main parts styles */
 .feachers{
     background-image: url('../assets/bg.png');
-    max-width: 1440px;
+    max-width: 1158.61px;
     background-repeat: no-repeat;
     justify-content: center;
     align-items: center;
@@ -234,12 +239,12 @@
 /* section 2 styles */
 
 .section-2{
-    background-image: url(../assets/bg.png);  
-    background-color: #c7c96b;
+    background-image: url(../assets/bg.png);
+    background-color: #abe427;
 }
 
 .sec-2{
-    max-width: 1440px;
+    max-width: 1158.61px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -348,5 +353,46 @@
     font-weight: 600;
     font-size: 20px;
     padding: 10px
+
+}
+
+/* Responsive styles */
+@media screen and (max-width: 576px) and (max-width: 992px) {
+
+
+    /* navbar relater */
+    .nav-hading{
+        display: none;
+    }
+    .nav-links{
+        display: none;
+    }
+    .nav-btn{
+        display: none;
+    }
+
+    .btn{
+        display: block;
+    }
+
+    .banner{
+        flex-direction: column-reverse;
+    }
+
+    .card{
+        grid-template-columns: 1fr;
+        gap: 10px;
+
+    }
+
+    .image-grid{
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .footer-div{
+        flex-direction: column;
+    }
+
 
 }
